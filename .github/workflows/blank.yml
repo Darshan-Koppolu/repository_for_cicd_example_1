@@ -36,5 +36,5 @@ jobs:
           echo test, and deploy your project.
       - name: retrieving sec and var
         run: |
-          echo ${{ secrets.SEC }}
-          echo ${{ vars.VAR }}
+          echo "this is secret ${{ secrets.SEC }}"
+          echo " this is variable ${{ vars.VAR }}"
